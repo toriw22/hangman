@@ -73,7 +73,7 @@ class Game extends Component {
     updateRemainingChances = () => {
         let remainingChances = this.state.remainingChances;
         remainingChances = remainingChances - 1;
-        if (remainingChances === -1) {
+        if (remainingChances === 0) {
             this.restartGame('You Lost!')
         }
         return remainingChances;
